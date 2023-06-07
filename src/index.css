@@ -1,5 +1,7 @@
-body {
+body, html {
   margin: 0;
+  background-color: rgb(167, 154, 154);
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +9,201 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.actual {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+  background-color: bisque;
+  border-style: solid;
+  border-width: 2px;
+  height: 5vh;
+}
+
+.filler {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+  background-color: bisque;
+  border-style: solid;
+  border-width: 2px;
+  padding: 0;
+  margin: 0;
+  height: 5vh;
+}
+
+#title {
+  font-weight: 900;
+  font-style: italic;
+  padding: 5px;
+  cursor: default;
+  padding: 0px;
+  margin-top: 1vh;
+}
+
+#add {
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: .5vh;
+  margin-bottom: 0;
+  cursor: pointer;
+  background-color: bisque;
+}
+
+#un {
+  padding: 0px;
+  margin: 0px;
+  cursor: default;
+  margin-top: 1vh;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  width: 100%;
+  padding: .5vh;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: .4vh;
+  margin-bottom: 0;
+  background-color: white;
+}
+
+#card-top {
+  display: flex
+}
+
+.loc-in {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.card-rating {
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+  font-weight: 400;
+}
+
+.card-map {
+  width: 98%;
+  margin: 1vh;
+  height: 55vh;
+  border-style: solid;
+  align-self: center;
+  pointer-events: none;
+}
+
+.verdict {
+  margin: 0;
+}
+
+.card-description {
+  margin: 0;
+}
+
+#popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: white;
+  padding: 0px .75%;
+  border-radius: 3px;
+  width: 90vw;
+  height: 70vh;
+  border-style: solid;
+  border-width: 2px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+#popup-close {
+  border: 0;
+  float: right;
+  width: 3vw;
+  cursor: pointer;
+  text-align: center;
+  font-size: larger;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+#popup-add {
+  padding: 1px 2px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#popup-overlay  {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background: rgba(49,49,49,0.8);
+}
+
+#popup-submit {
+  cursor: pointer;
+  margin-top: 1vh;
+  width: 15vw;
+}
+
+#popup-map {
+  height: 40vh;
+}
+
+#form-location {
+  margin-bottom: .5vh;
+  width: 15vw;
+}
+
+#form-rating {
+  margin-top: 1vh;
+  margin-bottom: .5vh;
+  width: 15vw;
+}
+
+#form-map {
+  margin-top: 1vh;
+  margin-bottom: .5vh;
+  width: 15vw;
+}
+
+#form-description {
+  margin-top: 1vh;
+  margin-bottom: .5vh;
+  width: 15vw;
+}
+
+#form-description-input {
+  height: 15vh;
+}
+
+#leaf-container {
+  height: 100px;
+  width: 100px;
 }
